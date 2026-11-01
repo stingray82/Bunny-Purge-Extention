@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bunny Purge</title><link rel="stylesheet" href="styles.css"></head><body class="popup">
+<header class="top"><div class="logo">🐰</div><div><h1>Bunny Purge</h1><p>Fast bunny.net cache clearing</p></div></header>
+<main class="content"><div id="notice" class="toast hidden" role="status"></div>
+<section class="card"><p class="eyebrow">Current website</p><div id="currentName" class="site-title">Checking current tab…</div><div id="currentUrl" class="muted"></div><div id="currentStatus" class="status no">Not configured</div><div class="actions"><button id="purgeZone" class="btn primary" disabled>Purge entire zone</button><button id="purgeUrl" class="btn dark" disabled>Purge this URL</button></div><p class="hint">Entire zone clears all cached assets. URL purges just this page URL.</p></section>
+<section class="card"><div class="space"><p class="eyebrow" style="margin:0">Other saved websites</p><span id="count" class="pill">0 sites</span></div><label class="label" for="selectSite">Choose a site</label><select id="selectSite" class="input"></select><button id="purgeSelected" class="btn wide" style="margin-top:10px">Purge selected site's zone</button></section>
+<div class="space"><span class="muted">Shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> (Mac: ⌘⇧9)</span><a class="link" href="options.html" target="_blank">Manage sites ↗</a></div></main>
+<footer class="footer"><a id="shortcuts" class="link small" href="#">Edit shortcut</a><span class="muted">v1.0.0</span></footer>
+<script src="shared.js"></script><script src="popup.js"></script></body></html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Bunny Purge",
+  "short_name": "Bunny Purge",
+  "version": "1.0.0",
+  "description": "Purge bunny.net CDN caches for saved sites from the toolbar or a keyboard shortcut.",
+  "permissions": ["storage", "activeTab", "tabs", "notifications"],
+  "host_permissions": ["https://api.bunny.net/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Bunny Purge", "default_popup": "popup.html", "default_icon": {"16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png"}},
+  "options_page": "options.html",
+  "icons": {"16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png"},
+  "commands": {"purge-current-site": {"suggested_key": {"default": "Ctrl+Shift+9", "mac": "Command+Shift+9"}, "description": "Purge the matched site's entire Bunny CDN Pull Zone"}}
+}
